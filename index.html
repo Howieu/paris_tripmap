@@ -48,7 +48,7 @@
     <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
-        // 行程数据配置 (整合了坐标与导航链接)
+        // 行程数据配置 (5号与6号互换)
         const itineraryData = [
             {
                 day: 1,
@@ -64,6 +64,16 @@
             {
                 day: 2,
                 date: "3月5日",
+                title: "慵懒早晨与凡尔赛宫",
+                color: "#10b981", // Green
+                route: [
+                    { name: "酒店/15区早午餐", lat: 48.8365, lng: 2.2985, time: "10:30", desc: "睡到自然醒，在酒店附近享用法式 Brunch。", gMap: "https://www.google.com/maps/search/?api=1&query=Brasserie+near+Hôtel+Convention+Montparnasse,Paris", aMap: "http://maps.apple.com/?q=Brasserie&sll=48.8365,2.2985" },
+                    { name: "凡尔赛宫", lat: 48.8049, lng: 2.1204, time: "14:00", desc: "下午2点入场。建议乘 RER C/N线。", gMap: "https://www.google.com/maps/dir/?api=1&destination=Palace+of+Versailles&travelmode=transit", aMap: "http://maps.apple.com/?daddr=Palace+of+Versailles&dirflg=r" }
+                ]
+            },
+            {
+                day: 3,
+                date: "3月6日",
                 title: "暴走打卡与血拼",
                 color: "#3b82f6", // Blue
                 fullRouteGMap: "https://www.google.com/maps/dir/?api=1&origin=Louvre+Museum,Paris&destination=Galeries+Lafayette+Haussmann,Paris&waypoints=LV+DREAM,Paris|Saint+Laurent+Rive+Droite,Paris|Tuileries+Garden,Paris|Place+de+la+Concorde,Paris|Arc+de+Triomphe,Paris|Trocadéro,Paris&travelmode=walking",
@@ -74,15 +84,6 @@
                     { name: "杜乐丽 -> 协和 -> 凯旋门", lat: 48.8738, lng: 2.2950, time: "15:00", desc: "一路向西漫步至凯旋门。", gMap: "https://www.google.com/maps/dir/?api=1&destination=Arc+de+Triomphe,Paris", aMap: "http://maps.apple.com/?daddr=Arc+de+Triomphe,+Paris" },
                     { name: "夏乐宫 (看铁塔)", lat: 48.8630, lng: 2.2871, time: "16:30", desc: "最佳机位 (Trocadéro)。", gMap: "https://www.google.com/maps/dir/?api=1&destination=Trocadéro,Paris", aMap: "http://maps.apple.com/?daddr=Trocadero,+Paris" },
                     { name: "老佛爷百货", lat: 48.8735, lng: 2.3323, time: "18:30", desc: "找 Lemaire 专柜，20:30关门。", gMap: "https://www.google.com/maps/dir/?api=1&destination=Galeries+Lafayette+Haussmann,Paris", aMap: "http://maps.apple.com/?daddr=Galeries+Lafayette+Haussmann,+Paris" }
-                ]
-            },
-            {
-                day: 3,
-                date: "3月6日",
-                title: "慵懒早晨与凡尔赛宫",
-                color: "#10b981", // Green
-                route: [
-                    { name: "凡尔赛宫", lat: 48.8049, lng: 2.1204, time: "14:00", desc: "下午2点入场。建议乘 RER C/N线。", gMap: "https://www.google.com/maps/dir/?api=1&destination=Palace+of+Versailles&travelmode=transit", aMap: "http://maps.apple.com/?daddr=Palace+of+Versailles&dirflg=r" }
                 ]
             },
             {
@@ -240,3 +241,5 @@
     </script>
 </body>
 </html>
+
+
